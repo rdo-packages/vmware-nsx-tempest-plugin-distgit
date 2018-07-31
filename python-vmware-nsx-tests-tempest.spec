@@ -138,3 +138,4 @@ rm -rf doc/build/html/.{doctrees,buildinfo}
 %endif
 
 %changelog
+# REMOVEME: error caused by commit http://git.openstack.org/cgit/openstack/vmware-nsx-tempest-plugin/commit/?id=802164f2a2e25e57744c9acc1abab4b4d3ed6662
