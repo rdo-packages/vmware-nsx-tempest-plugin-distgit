@@ -1,6 +1,6 @@
 %global service vmware-nsx
 %global plugin vmware-nsx-tempest-plugin
-%global module vmware_nsx_tempest
+%global module vmware_nsx_tempest_plugin
 %global with_doc 1
 
 %{!?upstream_version: %global upstream_version %{version}%{?milestone}}
