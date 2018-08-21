@@ -38,16 +38,16 @@ BuildRequires:  python2-devel
 BuildRequires:  python2-pbr
 BuildRequires:  python2-setuptools
 
-Requires:   python2-tempest >= 1:17.2.0
-Requires:   python2-pbr >= 2.0.0
+Requires:   python2-tempest >= 1:18.0.0
+Requires:   python2-pbr >= 3.1.1
 Requires:   python2-neutron-lib
-Requires:   python2-oslo-log >= 3.30.0
+Requires:   python2-oslo-log >= 3.36.0
 Requires:   python2-netaddr
 Requires:   python2-six => 1.10.0
 Requires:   python2-requests
 Requires:   python2-oslo-serialization >= 2.18.0
 Requires:   python2-oslo-i18n
-Requires:   python2-oslo-config >= 2:4.0.0
+Requires:   python2-oslo-config >= 2:5.2.0
 Requires:   python2-testtools
 Requires:   python2-oslo-utils >= 3.33.0
 
@@ -73,16 +73,16 @@ BuildRequires:  python3-devel
 BuildRequires:  python3-pbr
 BuildRequires:  python3-setuptools
 
-Requires:   python3-tempest >= 1:17.2.0
-Requires:   python3-pbr >= 2.0.0
+Requires:   python3-tempest >= 1:18.0.0
+Requires:   python3-pbr >= 3.1.1
 Requires:   python3-neutron-lib
-Requires:   python3-oslo-log >= 3.30.0
+Requires:   python3-oslo-log >= 3.36.0
 Requires:   python3-netaddr
 Requires:   python3-six => 1.10.0
 Requires:   python3-requests
 Requires:   python3-oslo-serialization >= 2.18.0
 Requires:   python3-oslo-i18n
-Requires:   python3-oslo-config >= 2:4.0.0
+Requires:   python3-oslo-config >= 2:5.2.0
 Requires:   python3-testtools
 Requires:   python3-oslo-utils >= 3.33.0
 
