@@ -1,9 +1,9 @@
+%{!?upstream_version: %global upstream_version %{commit}}
+
 %global service vmware-nsx
 %global plugin vmware-nsx-tempest-plugin
 %global module vmware_nsx_tempest_plugin
 %global with_doc 1
-
-%{!?upstream_version: %global upstream_version %{version}%{?milestone}}
 
 %if 0%{?fedora}
 %global with_python3 1
@@ -16,13 +16,13 @@ are designed based on N-S traffic. Install this repo on external VM to \
 run entire test suite.
 
 Name:       python-%{service}-tests-tempest
-Version:    XXX
-Release:    XXX
+Version:    2.0.0.0
+Release:    1%{?dist}
 Summary:    Tempest plugin to test Neutron VMware NSX plugin
 License:    ASL 2.0
 URL:        https://git.openstack.org/cgit/openstack/%{plugin}/
 
-Source0:    http://tarballs.openstack.org/%{plugin}/%{plugin}-%{upstream_version}.tar.gz
+Source0:    http://tarballs.openstack.org/%{plugin}/%{module}-%{upstream_version}.tar.gz
 
 BuildArch:  noarch
 BuildRequires:  git
@@ -91,7 +91,7 @@ Requires:   python3-oslo-utils >= 3.33.0
 %endif
 
 %prep
-%autosetup -n %{plugin}-%{upstream_version} -S git
+%autosetup -n %{module}-%{upstream_version} -S git
 
 # Let's handle dependencies ourseleves
 %py_req_cleanup
@@ -138,3 +138,5 @@ rm -rf doc/build/html/.{doctrees,buildinfo}
 %endif
 
 %changelog
+* Tue Aug 28 2018 Chandan Kumar <chkumar@redhat.com> 2.0.0.0-1
+- Update to 2.0.0.0
