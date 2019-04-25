@@ -1,0 +1,8 @@
+Code-Review+2: Alfredo Moralejo <amoralej@redhat.com>
+Workflow+1: Alfredo Moralejo <amoralej@redhat.com>
+Verified+2: Zuul CI <zuul@review.rdoproject.org>
+Submitted-by: Zuul CI <zuul@review.rdoproject.org>
+Submitted-at: Thu, 25 Apr 2019 08:56:39 +0000
+Reviewed-on: https://review.rdoproject.org/r/20452
+Project: openstack/vmware-nsx-tempest-plugin-distgit
+Branch: refs/heads/stein-rdo
