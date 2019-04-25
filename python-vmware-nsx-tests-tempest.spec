@@ -23,13 +23,13 @@ are designed based on N-S traffic. Install this repo on external VM to \
 run entire test suite.
 
 Name:       python-%{service}-tests-tempest
-Version:    XXX
-Release:    XXX
+Version:    2.0.0.0
+Release:    1%{?dist}
 Summary:    Tempest plugin to test Neutron VMware NSX plugin
 License:    ASL 2.0
 URL:        https://git.openstack.org/cgit/openstack/%{plugin}/
 
-Source0:    http://tarballs.openstack.org/%{plugin}/%{plugin}-%{upstream_version}.tar.gz
+Source0:    http://github.com/openstack/%{plugin}/archive/%{upstream_version}.tar.gz
 
 BuildArch:  noarch
 BuildRequires:  git
@@ -106,3 +106,6 @@ rm -rf doc/build/html/.{doctrees,buildinfo}
 %endif
 
 %changelog
+* Thu Apr 25 2019 RDO <dev@lists.rdoproject.org> 2.0.0.0-1
+- Update to 2.0.0.0
+
